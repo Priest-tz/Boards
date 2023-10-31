@@ -14,9 +14,10 @@
 	<body>
 		<div class="head">
 			<div class="logo">
-				<a href="#" class="logo-text">Sherpry
-				<img class="rectangle" src="./img/logo.png" />
-			</a>
+				<a href="#" class="logo-text"
+					>Sherpry
+					<img class="rectangle" src="./img/logo.png" />
+				</a>
 			</div>
 			<div id="hamburger">
 				<span class="bar"></span>
@@ -320,30 +321,31 @@
 		</div>
 
 		<footer class="footer-head">
-
 			<div class="col">
 				<div class="logo">
-					<a href="#" class="logo-text">Sherpry
-					<img class="rectangle" src="./img/logo.png" />
-				</a>
-					<p class="f-logotext">The best place to get the right 
-						product for a very affordable 
-						price.</p>
+					<a href="#" class="logo-text"
+						>Sherpry
+						<img class="rectangle" src="./img/logo.png" />
+					</a>
+					<p class="f-logotext">
+						The best place to get the right product for a very
+						affordable price.
+					</p>
 				</div>
-				</div>
+			</div>
 
-				<div class="col">
+			<div class="col">
 				<h4>Contact</h4>
 				<p><strong>Address:</strong> Ikeja, Lagos</p>
 				<p><strong>Phone:</strong> +2347047651466, +2348076542411</p>
 				<p><strong>Hours:</strong> 09:00 - 18:00, Mon - Sat</p>
-					<h4>Follow Us</h4>
-					<div class="icon">
-						<i class="fab fa-facebook-f" aria-hidden="true"></i>
-						<i class="fab fa-twitter" aria-hidden="true"></i>
-						<i class="fab fa-instagram" aria-hidden="true"></i>
-						<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-						<i class="fab fa-youtube" aria-hidden="true"></i>
+				<h4>Follow Us</h4>
+				<div class="icon">
+					<i class="fab fa-facebook-f" aria-hidden="true"></i>
+					<i class="fab fa-twitter" aria-hidden="true"></i>
+					<i class="fab fa-instagram" aria-hidden="true"></i>
+					<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+					<i class="fab fa-youtube" aria-hidden="true"></i>
 				</div>
 			</div>
 
@@ -363,14 +365,62 @@
 				<a href="#">My Wishlist</a>
 				<a href="#">Track My Order</a>
 				<a href="#">Help</a>
-			</div>			
+			</div>
 		</footer>
 
 		<div class="copyright">
 			<p>"How can I lose when I came here with nothing" © 2023 by Dara</p>
 		</div>
 
-		<script src="script.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			const hamburger = document.querySelector("#hamburger");
+			const navbarMenu = document.querySelector("#navbar-menu");
+
+			hamburger.addEventListener("click", () => {
+				navbarMenu.classList.toggle("active");
+				hamburger.classList.toggle("active");
+			});
+
+			document.querySelectorAll(".nav-item").forEach((navItem) => {
+				navItem.addEventListener("click", () => {
+					hamburger.classList.remove("active");
+					navbarMenu.classList.remove("active");
+				});
+			});
+
+			
+				const decreaseButton = document.querySelector("#decrease");
+				const increaseButton = document.querySelector("#increase");
+				const quantityInput = document.querySelector("#quantity");
+
+				decreaseButton.addEventListener("click", () =>
+					updateQuantity(-1)
+				);
+				increaseButton.addEventListener("click", () =>
+					updateQuantity(1)
+				);
+
+				const updateQuantity = (change) => {
+					quantityInput.value = Number(quantityInput.value) + change;
+				};
+			});
+
+			const tabs = document.querySelectorAll(".tab-btn");
+			const all_content = document.querySelectorAll(".content");
+
+			tabs.forEach((tab, index) => {
+				tab.addEventListener("click", (e) => {
+					tabs.forEach((t) => t.classList.remove("active"));
+					tab.classList.add("active");
+
+					all_content.forEach((content) => {
+						content.classList.remove("active");
+					});
+					all_content[index].classList.add("active");
+				});
+			});
+		</script>
 		<script
 			src="https://kit.fontawesome.com/ee4f8fbe61.js"
 			crossorigin="anonymous"></script>
