@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+			rel="stylesheet" />
+		<title>Sherpry</title>
+	</head>
+	<body>
+		<div class="head">
+			<div class="logo">
+				<a href="#" class="logo-text">Sherpry
+				<img class="rectangle" src="./img/logo.png" />
+			</a>
+			</div>
+			<div id="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<div id="navbar-menu">
+				<ul class="menu">
+					<li class="nav-item"><a href="#">HOME</a></li>
+					<li class="nav-item"><a href="#">PRODUCT</a></li>
+					<li class="nav-item"><a href="#">ABOUT</a></li>
+					<li class="nav-item"><a href="#">SHOP</a></li>
+					<li class="nav-item"><a href="#">CONTACT</a></li>
+				</ul>
+
+				<ul class="login">
+					<li class="nav-item">
+						<a href="#"><i class="fa-solid fa-user"></i>Account</a>
+					</li>
+					<li class="nav-item">
+						<a href="#"
+							><i class="fa-solid fa-cart-shopping"></i>4</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="#"
+							>EN<i class="fa-solid fa-chevron-down"></i
+						></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"
+							>USD<i class="fa-solid fa-chevron-down"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="product" id="product-details">
+			<div class="product-content">
+				<div class="images">
+					<div class="border">
+						<span class="discount">-15% </span>
+						<div class="bigImg">
+							<img
+								src="./img/img1.png"
+								width="100%"
+								id="MainImg"
+								alt="" />
+						</div>
+					</div>
+
+					<div class="small-img-group">
+						<div class="small-img-col">
+							<img
+								src="./img/img2.png"
+								width="100%"
+								class="small-img"
+								alt="" />
+						</div>
+						<div class="small-img-col">
+							<img
+								src="./img/img3.png"
+								width="100%"
+								class="small-img"
+								alt="" />
+						</div>
+						<div class="small-img-col">
+							<img
+								src="./img/img4.png"
+								width="100%"
+								class="small-img"
+								alt="" />
+						</div>
+					</div>
+				</div>
+
+				<div class="details">
+					<div class="product-head">
+						<span class="product-name">Hale T-shirt</span>
+						<span class="product-description"
+							>Our classic design features a crewneck, short
+							sleeves, and a flattering fit that looks great on
+							everyone. Available in a wide range of colors and
+							sizes, you can easily find the perfect match for
+							your style. From a casual day out with friends to a
+							more formal event, the [Brand Name] T-shirt is
+							versatile enough to be dressed up or down.</span
+						>
+					</div>
+					<hr />
+					<div class="category">
+						<label class="category-head">Category:</label>
+						<select class="category-options" name="category">
+							<option value="shirts">T-Shirts</option>
+							<option value="shirts">Polo Shirt</option>
+						</select>
+					</div>
+
+					<div class="color">
+						<label class="color-head">Color:</label>
+						<label class="color-label white">
+							<input type="radio" name="color" value="white" />
+						</label>
+						<label class="color-label brown">
+							<input type="radio" name="color" value="brown" />
+						</label>
+						<label class="color-label maroon">
+							<input type="radio" name="color" value="maroon" />
+						</label>
+						<label class="color-label blue">
+							<input type="radio" name="color" value="blue" />
+						</label>
+					</div>
+
+					<div class="size">
+						<label class="size-head">Size:</label>
+						<select class="size-options" name="size">
+							<option value="XS">Extra Small (XS)</option>
+							<option value="S">Small (S)</option>
+							<option value="M">Medium (M)</option>
+							<option value="L">Large (L)</option>
+							<option value="XL">Extra Large (XL)</option>
+						</select>
+					</div>
+
+					<div class="quantity">
+						<label class="quantity-head">Quantity: </label>
+						<button class="quantity-btn" id="decrease">-</button>
+						<input
+							class="quantity-input"
+							type="number"
+							id="quantity"
+							value="1" />
+						<button class="quantity-btn" id="increase">+</button>
+					</div>
+
+					<hr />
+
+					<div class="price">
+						<span class="sales-price">$20</span>
+						<span class="actual-price">$15</span>
+					</div>
+
+					<div class="button">
+						<button class="cart-btn">Add to Cart</button>
+						<button class="wishlist-btn">Add to wishlist</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabs">
+			<div class="tab-box">
+				<button class="tab-btn active">Description</button
+				><button class="tab-btn">Specifications</button
+				><button class="tab-btn">Reviews</button>
+				<button class="tab-btn">Tags</button>
+			</div>
+
+			<hr />
+
+			<div class="content-box">
+				<div class="content active">
+					<h2>Description</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam, ut voluptates. Nihil natus, provident quisquam a
+						ex saepe dolores fugit ipsum eaque voluptas, ullam odio
+						deserunt quos eos numquam vitae? Maiores fuga cum
+						officiis corporis inventore. Dolor iste ipsa molestias
+						voluptatem nisi recusandae eaque assumenda placeat
+						distinctio inventore blanditiis sunt ut veritatis
+						tempora voluptas magni laudantium vero perferendis,
+						ipsam saepe optio, commodi fugiat accusamus amet!
+						Repudiandae, assumenda error ea tempora sed molestiae
+						odit consequuntur mollitia itaque? Enim, neque. Officiis
+						nisi porro aperiam maiores provident veritatis corrupti,
+						molestiae distinctio dolorum quibusdam repellat ipsum
+						expedita facilis necessitatibus at delectus praesentium,
+						ratione repudiandae?
+					</p>
+				</div>
+				<div class="content">
+					<h2>Specifications</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam, ut voluptates. Nihil natus, provident quisquam a
+						ex saepe dolores fugit ipsum eaque voluptas, ullam odio
+						deserunt quos eos numquam vitae? Maiores fuga cum
+						officiis corporis inventore. Dolor iste ipsa molestias
+						voluptatem nisi recusandae eaque assumenda placeat
+						distinctio inventore blanditiis sunt ut veritatis
+						tempora voluptas magni laudantium vero perferendis,
+						ipsam saepe optio, commodi fugiat accusamus amet!
+						Repudiandae, assumenda error ea tempora sed molestiae
+						odit consequuntur mollitia itaque? Enim, neque. Officiis
+						nisi porro aperiam maiores provident veritatis corrupti,
+						molestiae distinctio dolorum quibusdam repellat ipsum
+						expedita facilis necessitatibus at delectus praesentium,
+						ratione repudiandae?
+					</p>
+				</div>
+				<div class="content">
+					<h2>Reviews</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam, ut voluptates. Nihil natus, provident quisquam a
+						ex saepe dolores fugit ipsum eaque voluptas, ullam odio
+						deserunt quos eos numquam vitae? Maiores fuga cum
+						officiis corporis inventore. Dolor iste ipsa molestias
+						voluptatem nisi recusandae eaque assumenda placeat
+						distinctio inventore blanditiis sunt ut veritatis
+						tempora voluptas magni laudantium vero perferendis,
+						ipsam saepe optio, commodi fugiat accusamus amet!
+						Repudiandae, assumenda error ea tempora sed molestiae
+						odit consequuntur mollitia itaque? Enim, neque. Officiis
+						nisi porro aperiam maiores provident veritatis corrupti,
+						molestiae distinctio dolorum quibusdam repellat ipsum
+						expedita facilis necessitatibus at delectus praesentium,
+						ratione repudiandae?
+					</p>
+				</div>
+				<div class="content">
+					<h2>Tags</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam, ut voluptates. Nihil natus, provident quisquam a
+						ex saepe dolores fugit ipsum eaque voluptas, ullam odio
+						deserunt quos eos numquam vitae? Maiores fuga cum
+						officiis corporis inventore. Dolor iste ipsa molestias
+						voluptatem nisi recusandae eaque assumenda placeat
+						distinctio inventore blanditiis sunt ut veritatis
+						tempora voluptas magni laudantium vero perferendis,
+						ipsam saepe optio, commodi fugiat accusamus amet!
+						Repudiandae, assumenda error ea tempora sed molestiae
+						odit consequuntur mollitia itaque? Enim, neque. Officiis
+						nisi porro aperiam maiores provident veritatis corrupti,
+						molestiae distinctio dolorum quibusdam repellat ipsum
+						expedita facilis necessitatibus at delectus praesentium,
+						ratione repudiandae?
+					</p>
+				</div>
+			</div>
+
+			<hr />
+		</div>
+
+		<div class="ads">
+			<h2>Related Products</h2>
+			<div class="adImg">
+				<div class="adBorder">
+					<div class="Img">
+						<img
+							src="./img/prev1.png"
+							width="260px"
+							height="400px" />
+						<div class="priceDetails">
+							<h3>Hale 2</h3>
+							<p>$10</p>
+						</div>
+					</div>
+				</div>
+				<div class="adBorder">
+					<div class="Img">
+						<img
+							src="./img/prev2.png"
+							width="260px"
+							height="400px" />
+						<div class="priceDetails">
+							<h3>Hale 3</h3>
+							<p>$27</p>
+						</div>
+					</div>
+				</div>
+				<div class="adBorder">
+					<div class="Img">
+						<img
+							src="./img/prev3.png"
+							width="260px"
+							height="400px" />
+						<div class="priceDetails">
+							<h3>Hale 4</h3>
+							<p>$12</p>
+						</div>
+					</div>
+				</div>
+				<div class="adBorder">
+					<div class="Img">
+						<img
+							src="./img/prev4.png"
+							width="260px"
+							height="400px" />
+						<div class="priceDetails">
+							<h3>Hale 5</h3>
+							<p>$15</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer-head">
+
+			<div class="col">
+				<div class="logo">
+					<a href="#" class="logo-text">Sherpry
+					<img class="rectangle" src="./img/logo.png" />
+				</a>
+					<p class="f-logotext">The best place to get the right 
+						product for a very affordable 
+						price.</p>
+				</div>
+				</div>
+
+				<div class="col">
+				<h4>Contact</h4>
+				<p><strong>Address:</strong> Ikeja, Lagos</p>
+				<p><strong>Phone:</strong> +2347047651466, +2348076542411</p>
+				<p><strong>Hours:</strong> 09:00 - 18:00, Mon - Sat</p>
+					<h4>Follow Us</h4>
+					<div class="icon">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+						<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+						<i class="fab fa-youtube" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div class="col">
+				<h4>About</h4>
+				<a href="#">About us</a>
+				<a href="#">Delivery Information</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Terms & Conditions</a>
+				<a href="#">Contact Us</a>
+			</div>
+
+			<div class="col">
+				<h4>My Account</h4>
+				<a href="#">Sign In</a>
+				<a href="#">View Cart</a>
+				<a href="#">My Wishlist</a>
+				<a href="#">Track My Order</a>
+				<a href="#">Help</a>
+			</div>			
+		</footer>
+
+		<div class="copyright">
+			<p>"How can I lose when I came here with nothing" © 2023 by Dara</p>
+		</div>
+
+		<script src="script.js"></script>
+		<script
+			src="https://kit.fontawesome.com/ee4f8fbe61.js"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
